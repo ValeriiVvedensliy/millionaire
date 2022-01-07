@@ -12,6 +12,32 @@
 		E0F29A0727725E72000E91AC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0F29A0527725E72000E91AC /* Main.storyboard */; };
 		E0F29A0927725E74000E91AC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E0F29A0827725E74000E91AC /* Assets.xcassets */; };
 		E0F29A0C27725E74000E91AC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0F29A0A27725E74000E91AC /* LaunchScreen.storyboard */; };
+		E0F29A1527725F3B000E91AC /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F29A1427725F3B000E91AC /* Question.swift */; };
+		E0F29A1A277265C8000E91AC /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F29A18277265C8000E91AC /* HomeViewController.swift */; };
+		E0F29A1B277265C8000E91AC /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E0F29A19277265C8000E91AC /* HomeViewController.xib */; };
+		E0F29A1F27726B3F000E91AC /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F29A1E27726B3F000E91AC /* UIColor+Extension.swift */; };
+		E0F29A21277274A6000E91AC /* Flow.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F29A20277274A6000E91AC /* Flow.swift */; };
+		E0F29A23277274BB000E91AC /* Steps.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F29A22277274BB000E91AC /* Steps.swift */; };
+		E0F29A25277276FA000E91AC /* GameFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F29A24277276FA000E91AC /* GameFlow.swift */; };
+		E0F29A2A27728040000E91AC /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F29A2827728040000E91AC /* GameViewController.swift */; };
+		E0F29A2B27728040000E91AC /* GameViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E0F29A2927728040000E91AC /* GameViewController.xib */; };
+		E0F29A2D2772889B000E91AC /* UIButton+Extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F29A2C2772889B000E91AC /* UIButton+Extention.swift */; };
+		E0F29A2F27728BFE000E91AC /* UIImageView+Extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F29A2E27728BFE000E91AC /* UIImageView+Extention.swift */; };
+		E0F29A4A2784C8A5000E91AC /* QuestionSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F29A492784C8A5000E91AC /* QuestionSource.swift */; };
+		E0F29A4C27877D89000E91AC /* GameSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F29A4B27877D89000E91AC /* GameSession.swift */; };
+		E0F29A4E27878027000E91AC /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F29A4D27878027000E91AC /* Game.swift */; };
+		E0F29A5127878475000E91AC /* GameDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F29A5027878475000E91AC /* GameDelegate.swift */; };
+		E0F29A532787862D000E91AC /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F29A522787862D000E91AC /* GameScene.swift */; };
+		E0F29A57278836CB000E91AC /* InfoPopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F29A55278836CA000E91AC /* InfoPopUpViewController.swift */; };
+		E0F29A58278836CB000E91AC /* InfoPopUpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E0F29A56278836CA000E91AC /* InfoPopUpViewController.xib */; };
+		E0F29A5A278837A0000E91AC /* String+Extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F29A59278837A0000E91AC /* String+Extention.swift */; };
+		E0F29A5C27883817000E91AC /* UIFont+Extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F29A5B27883817000E91AC /* UIFont+Extention.swift */; };
+		E0F29A5E27884F11000E91AC /* Record.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F29A5D27884F11000E91AC /* Record.swift */; };
+		E0F29A6027885200000E91AC /* RecordsCaretaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F29A5F27885200000E91AC /* RecordsCaretaker.swift */; };
+		E0F29A652788EE89000E91AC /* ResultTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F29A632788EE89000E91AC /* ResultTableViewController.swift */; };
+		E0F29A662788EE89000E91AC /* ResultTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E0F29A642788EE89000E91AC /* ResultTableViewController.xib */; };
+		E0F29A692788EEA3000E91AC /* ResultTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F29A672788EEA3000E91AC /* ResultTableViewCell.swift */; };
+		E0F29A6A2788EEA3000E91AC /* ResultTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E0F29A682788EEA3000E91AC /* ResultTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +48,32 @@
 		E0F29A0827725E74000E91AC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E0F29A0B27725E74000E91AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E0F29A0D27725E74000E91AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E0F29A1427725F3B000E91AC /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
+		E0F29A18277265C8000E91AC /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		E0F29A19277265C8000E91AC /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		E0F29A1E27726B3F000E91AC /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		E0F29A20277274A6000E91AC /* Flow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flow.swift; sourceTree = "<group>"; };
+		E0F29A22277274BB000E91AC /* Steps.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Steps.swift; sourceTree = "<group>"; };
+		E0F29A24277276FA000E91AC /* GameFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameFlow.swift; sourceTree = "<group>"; };
+		E0F29A2827728040000E91AC /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		E0F29A2927728040000E91AC /* GameViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GameViewController.xib; sourceTree = "<group>"; };
+		E0F29A2C2772889B000E91AC /* UIButton+Extention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Extention.swift"; sourceTree = "<group>"; };
+		E0F29A2E27728BFE000E91AC /* UIImageView+Extention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extention.swift"; sourceTree = "<group>"; };
+		E0F29A492784C8A5000E91AC /* QuestionSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionSource.swift; sourceTree = "<group>"; };
+		E0F29A4B27877D89000E91AC /* GameSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameSession.swift; sourceTree = "<group>"; };
+		E0F29A4D27878027000E91AC /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		E0F29A5027878475000E91AC /* GameDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameDelegate.swift; sourceTree = "<group>"; };
+		E0F29A522787862D000E91AC /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		E0F29A55278836CA000E91AC /* InfoPopUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoPopUpViewController.swift; sourceTree = "<group>"; };
+		E0F29A56278836CA000E91AC /* InfoPopUpViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InfoPopUpViewController.xib; sourceTree = "<group>"; };
+		E0F29A59278837A0000E91AC /* String+Extention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extention.swift"; sourceTree = "<group>"; };
+		E0F29A5B27883817000E91AC /* UIFont+Extention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Extention.swift"; sourceTree = "<group>"; };
+		E0F29A5D27884F11000E91AC /* Record.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Record.swift; sourceTree = "<group>"; };
+		E0F29A5F27885200000E91AC /* RecordsCaretaker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordsCaretaker.swift; sourceTree = "<group>"; };
+		E0F29A632788EE89000E91AC /* ResultTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultTableViewController.swift; sourceTree = "<group>"; };
+		E0F29A642788EE89000E91AC /* ResultTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ResultTableViewController.xib; sourceTree = "<group>"; };
+		E0F29A672788EEA3000E91AC /* ResultTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultTableViewCell.swift; sourceTree = "<group>"; };
+		E0F29A682788EEA3000E91AC /* ResultTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ResultTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +106,11 @@
 		E0F299FE27725E72000E91AC /* millionaire */ = {
 			isa = PBXGroup;
 			children = (
+				E0F29A482784C878000E91AC /* Source */,
+				E0F29A1D27726B15000E91AC /* Extensions */,
+				E0F29A1C277265DD000E91AC /* Flow */,
+				E0F29A162772657B000E91AC /* Scenes */,
+				E0F29A1327725F2B000E91AC /* Structs */,
 				E0F299FF27725E72000E91AC /* AppDelegate.swift */,
 				E0F29A0127725E72000E91AC /* SceneDelegate.swift */,
 				E0F29A0527725E72000E91AC /* Main.storyboard */,
@@ -62,6 +119,115 @@
 				E0F29A0D27725E74000E91AC /* Info.plist */,
 			);
 			path = millionaire;
+			sourceTree = "<group>";
+		};
+		E0F29A1327725F2B000E91AC /* Structs */ = {
+			isa = PBXGroup;
+			children = (
+				E0F29A1427725F3B000E91AC /* Question.swift */,
+				E0F29A4B27877D89000E91AC /* GameSession.swift */,
+				E0F29A4D27878027000E91AC /* Game.swift */,
+				E0F29A522787862D000E91AC /* GameScene.swift */,
+				E0F29A5D27884F11000E91AC /* Record.swift */,
+			);
+			path = Structs;
+			sourceTree = "<group>";
+		};
+		E0F29A162772657B000E91AC /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				E0F29A612788EE62000E91AC /* Result */,
+				E0F29A54278836CA000E91AC /* InfoPopUpViewController */,
+				E0F29A2627727FC2000E91AC /* Game */,
+				E0F29A1727726583000E91AC /* Home */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		E0F29A1727726583000E91AC /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				E0F29A18277265C8000E91AC /* HomeViewController.swift */,
+				E0F29A19277265C8000E91AC /* HomeViewController.xib */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		E0F29A1C277265DD000E91AC /* Flow */ = {
+			isa = PBXGroup;
+			children = (
+				E0F29A20277274A6000E91AC /* Flow.swift */,
+				E0F29A22277274BB000E91AC /* Steps.swift */,
+				E0F29A24277276FA000E91AC /* GameFlow.swift */,
+			);
+			path = Flow;
+			sourceTree = "<group>";
+		};
+		E0F29A1D27726B15000E91AC /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				E0F29A1E27726B3F000E91AC /* UIColor+Extension.swift */,
+				E0F29A2C2772889B000E91AC /* UIButton+Extention.swift */,
+				E0F29A2E27728BFE000E91AC /* UIImageView+Extention.swift */,
+				E0F29A59278837A0000E91AC /* String+Extention.swift */,
+				E0F29A5B27883817000E91AC /* UIFont+Extention.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		E0F29A2627727FC2000E91AC /* Game */ = {
+			isa = PBXGroup;
+			children = (
+				E0F29A4F27878432000E91AC /* Delegate */,
+				E0F29A2827728040000E91AC /* GameViewController.swift */,
+				E0F29A2927728040000E91AC /* GameViewController.xib */,
+			);
+			path = Game;
+			sourceTree = "<group>";
+		};
+		E0F29A482784C878000E91AC /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				E0F29A492784C8A5000E91AC /* QuestionSource.swift */,
+				E0F29A5F27885200000E91AC /* RecordsCaretaker.swift */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		E0F29A4F27878432000E91AC /* Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				E0F29A5027878475000E91AC /* GameDelegate.swift */,
+			);
+			path = Delegate;
+			sourceTree = "<group>";
+		};
+		E0F29A54278836CA000E91AC /* InfoPopUpViewController */ = {
+			isa = PBXGroup;
+			children = (
+				E0F29A55278836CA000E91AC /* InfoPopUpViewController.swift */,
+				E0F29A56278836CA000E91AC /* InfoPopUpViewController.xib */,
+			);
+			path = InfoPopUpViewController;
+			sourceTree = "<group>";
+		};
+		E0F29A612788EE62000E91AC /* Result */ = {
+			isa = PBXGroup;
+			children = (
+				E0F29A622788EE71000E91AC /* Cell */,
+				E0F29A632788EE89000E91AC /* ResultTableViewController.swift */,
+				E0F29A642788EE89000E91AC /* ResultTableViewController.xib */,
+			);
+			path = Result;
+			sourceTree = "<group>";
+		};
+		E0F29A622788EE71000E91AC /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				E0F29A672788EEA3000E91AC /* ResultTableViewCell.swift */,
+				E0F29A682788EEA3000E91AC /* ResultTableViewCell.xib */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -124,7 +290,12 @@
 			files = (
 				E0F29A0C27725E74000E91AC /* LaunchScreen.storyboard in Resources */,
 				E0F29A0927725E74000E91AC /* Assets.xcassets in Resources */,
+				E0F29A6A2788EEA3000E91AC /* ResultTableViewCell.xib in Resources */,
 				E0F29A0727725E72000E91AC /* Main.storyboard in Resources */,
+				E0F29A1B277265C8000E91AC /* HomeViewController.xib in Resources */,
+				E0F29A2B27728040000E91AC /* GameViewController.xib in Resources */,
+				E0F29A58278836CB000E91AC /* InfoPopUpViewController.xib in Resources */,
+				E0F29A662788EE89000E91AC /* ResultTableViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,8 +306,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E0F29A4A2784C8A5000E91AC /* QuestionSource.swift in Sources */,
+				E0F29A692788EEA3000E91AC /* ResultTableViewCell.swift in Sources */,
+				E0F29A6027885200000E91AC /* RecordsCaretaker.swift in Sources */,
+				E0F29A1527725F3B000E91AC /* Question.swift in Sources */,
+				E0F29A5E27884F11000E91AC /* Record.swift in Sources */,
+				E0F29A532787862D000E91AC /* GameScene.swift in Sources */,
+				E0F29A23277274BB000E91AC /* Steps.swift in Sources */,
+				E0F29A2D2772889B000E91AC /* UIButton+Extention.swift in Sources */,
 				E0F29A0027725E72000E91AC /* AppDelegate.swift in Sources */,
+				E0F29A5C27883817000E91AC /* UIFont+Extention.swift in Sources */,
+				E0F29A2F27728BFE000E91AC /* UIImageView+Extention.swift in Sources */,
+				E0F29A25277276FA000E91AC /* GameFlow.swift in Sources */,
+				E0F29A4C27877D89000E91AC /* GameSession.swift in Sources */,
+				E0F29A2A27728040000E91AC /* GameViewController.swift in Sources */,
+				E0F29A4E27878027000E91AC /* Game.swift in Sources */,
 				E0F29A0227725E72000E91AC /* SceneDelegate.swift in Sources */,
+				E0F29A57278836CB000E91AC /* InfoPopUpViewController.swift in Sources */,
+				E0F29A5A278837A0000E91AC /* String+Extention.swift in Sources */,
+				E0F29A21277274A6000E91AC /* Flow.swift in Sources */,
+				E0F29A5127878475000E91AC /* GameDelegate.swift in Sources */,
+				E0F29A1F27726B3F000E91AC /* UIColor+Extension.swift in Sources */,
+				E0F29A652788EE89000E91AC /* ResultTableViewController.swift in Sources */,
+				E0F29A1A277265C8000E91AC /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
