@@ -9,8 +9,5 @@ import Foundation
 
 protocol GameDelegate: AnyObject {
   func updateProgresGame(isTrue: Bool)
-  func usehelperPeople()
-  func usehelperFifty()
-  func usehelperFriend()
   func gameEnd()
 }

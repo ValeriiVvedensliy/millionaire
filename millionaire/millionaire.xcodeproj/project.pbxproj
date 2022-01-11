@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E0B66012278E117000728020 /* HintUsageFacade.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0B66011278E117000728020 /* HintUsageFacade.swift */; };
+		E0B66014278E14BA00728020 /* HintUsedFacade.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0B66013278E14BA00728020 /* HintUsedFacade.swift */; };
 		E0F29A0027725E72000E91AC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F299FF27725E72000E91AC /* AppDelegate.swift */; };
 		E0F29A0227725E72000E91AC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F29A0127725E72000E91AC /* SceneDelegate.swift */; };
 		E0F29A0727725E72000E91AC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0F29A0527725E72000E91AC /* Main.storyboard */; };
@@ -38,9 +40,21 @@
 		E0F29A662788EE89000E91AC /* ResultTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E0F29A642788EE89000E91AC /* ResultTableViewController.xib */; };
 		E0F29A692788EEA3000E91AC /* ResultTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F29A672788EEA3000E91AC /* ResultTableViewCell.swift */; };
 		E0F29A6A2788EEA3000E91AC /* ResultTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E0F29A682788EEA3000E91AC /* ResultTableViewCell.xib */; };
+		E0F29A6D278B68F5000E91AC /* QuestionsQueueStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F29A6C278B68F5000E91AC /* QuestionsQueueStrategy.swift */; };
+		E0F29A6F278B6A56000E91AC /* DefaultQuestionsQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F29A6E278B6A56000E91AC /* DefaultQuestionsQueue.swift */; };
+		E0F29A71278B6BA7000E91AC /* RandomQuestionsQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F29A70278B6BA7000E91AC /* RandomQuestionsQueue.swift */; };
+		E0F29A75278B6EEC000E91AC /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F29A73278B6EEC000E91AC /* SettingViewController.swift */; };
+		E0F29A76278B6EEC000E91AC /* SettingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E0F29A74278B6EEC000E91AC /* SettingViewController.xib */; };
+		E0F29A79278B795A000E91AC /* Queue.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F29A78278B795A000E91AC /* Queue.swift */; };
+		E0F29A7C278B8368000E91AC /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F29A7B278B8368000E91AC /* Observable.swift */; };
+		E0F29A80278CA864000E91AC /* CreationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F29A7E278CA864000E91AC /* CreationViewController.swift */; };
+		E0F29A81278CA864000E91AC /* CreationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E0F29A7F278CA864000E91AC /* CreationViewController.xib */; };
+		E0F29A83278CC0AB000E91AC /* QuestionCaretaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F29A82278CC0AB000E91AC /* QuestionCaretaker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E0B66011278E117000728020 /* HintUsageFacade.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HintUsageFacade.swift; sourceTree = "<group>"; };
+		E0B66013278E14BA00728020 /* HintUsedFacade.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HintUsedFacade.swift; sourceTree = "<group>"; };
 		E0F299FC27725E72000E91AC /* millionaire.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = millionaire.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0F299FF27725E72000E91AC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E0F29A0127725E72000E91AC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -74,6 +88,16 @@
 		E0F29A642788EE89000E91AC /* ResultTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ResultTableViewController.xib; sourceTree = "<group>"; };
 		E0F29A672788EEA3000E91AC /* ResultTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultTableViewCell.swift; sourceTree = "<group>"; };
 		E0F29A682788EEA3000E91AC /* ResultTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ResultTableViewCell.xib; sourceTree = "<group>"; };
+		E0F29A6C278B68F5000E91AC /* QuestionsQueueStrategy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionsQueueStrategy.swift; sourceTree = "<group>"; };
+		E0F29A6E278B6A56000E91AC /* DefaultQuestionsQueue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultQuestionsQueue.swift; sourceTree = "<group>"; };
+		E0F29A70278B6BA7000E91AC /* RandomQuestionsQueue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomQuestionsQueue.swift; sourceTree = "<group>"; };
+		E0F29A73278B6EEC000E91AC /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
+		E0F29A74278B6EEC000E91AC /* SettingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingViewController.xib; sourceTree = "<group>"; };
+		E0F29A78278B795A000E91AC /* Queue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Queue.swift; sourceTree = "<group>"; };
+		E0F29A7B278B8368000E91AC /* Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
+		E0F29A7E278CA864000E91AC /* CreationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreationViewController.swift; sourceTree = "<group>"; };
+		E0F29A7F278CA864000E91AC /* CreationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CreationViewController.xib; sourceTree = "<group>"; };
+		E0F29A82278CC0AB000E91AC /* QuestionCaretaker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionCaretaker.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +111,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E0B66010278E115A00728020 /* Pattern */ = {
+			isa = PBXGroup;
+			children = (
+				E0B66011278E117000728020 /* HintUsageFacade.swift */,
+			);
+			path = Pattern;
+			sourceTree = "<group>";
+		};
 		E0F299F327725E72000E91AC = {
 			isa = PBXGroup;
 			children = (
@@ -106,6 +138,9 @@
 		E0F299FE27725E72000E91AC /* millionaire */ = {
 			isa = PBXGroup;
 			children = (
+				E0B66010278E115A00728020 /* Pattern */,
+				E0F29A7A278B8348000E91AC /* Observable */,
+				E0F29A6B278B6843000E91AC /* Protocol */,
 				E0F29A482784C878000E91AC /* Source */,
 				E0F29A1D27726B15000E91AC /* Extensions */,
 				E0F29A1C277265DD000E91AC /* Flow */,
@@ -136,6 +171,8 @@
 		E0F29A162772657B000E91AC /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				E0F29A7D278C9C08000E91AC /* Creation */,
+				E0F29A72278B6EBF000E91AC /* Setting */,
 				E0F29A612788EE62000E91AC /* Result */,
 				E0F29A54278836CA000E91AC /* InfoPopUpViewController */,
 				E0F29A2627727FC2000E91AC /* Game */,
@@ -190,6 +227,9 @@
 			children = (
 				E0F29A492784C8A5000E91AC /* QuestionSource.swift */,
 				E0F29A5F27885200000E91AC /* RecordsCaretaker.swift */,
+				E0F29A6E278B6A56000E91AC /* DefaultQuestionsQueue.swift */,
+				E0F29A70278B6BA7000E91AC /* RandomQuestionsQueue.swift */,
+				E0F29A82278CC0AB000E91AC /* QuestionCaretaker.swift */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -228,6 +268,50 @@
 				E0F29A682788EEA3000E91AC /* ResultTableViewCell.xib */,
 			);
 			path = Cell;
+			sourceTree = "<group>";
+		};
+		E0F29A6B278B6843000E91AC /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				E0F29A6C278B68F5000E91AC /* QuestionsQueueStrategy.swift */,
+				E0B66013278E14BA00728020 /* HintUsedFacade.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		E0F29A72278B6EBF000E91AC /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				E0F29A77278B7943000E91AC /* Enums */,
+				E0F29A73278B6EEC000E91AC /* SettingViewController.swift */,
+				E0F29A74278B6EEC000E91AC /* SettingViewController.xib */,
+			);
+			path = Setting;
+			sourceTree = "<group>";
+		};
+		E0F29A77278B7943000E91AC /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				E0F29A78278B795A000E91AC /* Queue.swift */,
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
+		E0F29A7A278B8348000E91AC /* Observable */ = {
+			isa = PBXGroup;
+			children = (
+				E0F29A7B278B8368000E91AC /* Observable.swift */,
+			);
+			path = Observable;
+			sourceTree = "<group>";
+		};
+		E0F29A7D278C9C08000E91AC /* Creation */ = {
+			isa = PBXGroup;
+			children = (
+				E0F29A7E278CA864000E91AC /* CreationViewController.swift */,
+				E0F29A7F278CA864000E91AC /* CreationViewController.xib */,
+			);
+			path = Creation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -289,9 +373,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				E0F29A0C27725E74000E91AC /* LaunchScreen.storyboard in Resources */,
+				E0F29A76278B6EEC000E91AC /* SettingViewController.xib in Resources */,
 				E0F29A0927725E74000E91AC /* Assets.xcassets in Resources */,
 				E0F29A6A2788EEA3000E91AC /* ResultTableViewCell.xib in Resources */,
 				E0F29A0727725E72000E91AC /* Main.storyboard in Resources */,
+				E0F29A81278CA864000E91AC /* CreationViewController.xib in Resources */,
 				E0F29A1B277265C8000E91AC /* HomeViewController.xib in Resources */,
 				E0F29A2B27728040000E91AC /* GameViewController.xib in Resources */,
 				E0F29A58278836CB000E91AC /* InfoPopUpViewController.xib in Resources */,
@@ -311,21 +397,31 @@
 				E0F29A6027885200000E91AC /* RecordsCaretaker.swift in Sources */,
 				E0F29A1527725F3B000E91AC /* Question.swift in Sources */,
 				E0F29A5E27884F11000E91AC /* Record.swift in Sources */,
+				E0F29A80278CA864000E91AC /* CreationViewController.swift in Sources */,
 				E0F29A532787862D000E91AC /* GameScene.swift in Sources */,
 				E0F29A23277274BB000E91AC /* Steps.swift in Sources */,
 				E0F29A2D2772889B000E91AC /* UIButton+Extention.swift in Sources */,
 				E0F29A0027725E72000E91AC /* AppDelegate.swift in Sources */,
+				E0F29A6F278B6A56000E91AC /* DefaultQuestionsQueue.swift in Sources */,
 				E0F29A5C27883817000E91AC /* UIFont+Extention.swift in Sources */,
+				E0B66012278E117000728020 /* HintUsageFacade.swift in Sources */,
+				E0F29A6D278B68F5000E91AC /* QuestionsQueueStrategy.swift in Sources */,
 				E0F29A2F27728BFE000E91AC /* UIImageView+Extention.swift in Sources */,
 				E0F29A25277276FA000E91AC /* GameFlow.swift in Sources */,
 				E0F29A4C27877D89000E91AC /* GameSession.swift in Sources */,
+				E0F29A79278B795A000E91AC /* Queue.swift in Sources */,
 				E0F29A2A27728040000E91AC /* GameViewController.swift in Sources */,
+				E0B66014278E14BA00728020 /* HintUsedFacade.swift in Sources */,
 				E0F29A4E27878027000E91AC /* Game.swift in Sources */,
+				E0F29A83278CC0AB000E91AC /* QuestionCaretaker.swift in Sources */,
 				E0F29A0227725E72000E91AC /* SceneDelegate.swift in Sources */,
 				E0F29A57278836CB000E91AC /* InfoPopUpViewController.swift in Sources */,
 				E0F29A5A278837A0000E91AC /* String+Extention.swift in Sources */,
+				E0F29A71278B6BA7000E91AC /* RandomQuestionsQueue.swift in Sources */,
 				E0F29A21277274A6000E91AC /* Flow.swift in Sources */,
 				E0F29A5127878475000E91AC /* GameDelegate.swift in Sources */,
+				E0F29A7C278B8368000E91AC /* Observable.swift in Sources */,
+				E0F29A75278B6EEC000E91AC /* SettingViewController.swift in Sources */,
 				E0F29A1F27726B3F000E91AC /* UIColor+Extension.swift in Sources */,
 				E0F29A652788EE89000E91AC /* ResultTableViewController.swift in Sources */,
 				E0F29A1A277265C8000E91AC /* HomeViewController.swift in Sources */,

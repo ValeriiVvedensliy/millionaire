@@ -8,7 +8,6 @@
 import UIKit
 
 class GameViewController: UIViewController {
-
   @IBOutlet weak var helperPeopleView: UIImageView!
   @IBOutlet weak var helperFiftyView: UIImageView!
   @IBOutlet weak var helperFriendView: UIImageView!
@@ -17,9 +16,11 @@ class GameViewController: UIViewController {
   @IBOutlet weak var answerB: UIButton!
   @IBOutlet weak var answerC: UIButton!
   @IBOutlet weak var answerD: UIButton!
+  @IBOutlet weak var questionNumber: UILabel!
   
+  private var percent = Observable<Int>(0)
+  private var count = 1
   private var questions: [Question]!
-  private var source: QuestionSource!
   private var currentQuestion: Question!
   private var gameScene: GameScene!
   
@@ -30,20 +31,41 @@ class GameViewController: UIViewController {
   }
 
   private func setUpView() {
+    setGameScene()
     setUpSource()
     setUpGradient()
     setUpButton()
     setUpLabel()
     setUpImageView()
+    setUpBind()
+  }
+  
+  private func setUpBind() {
+    guard let text = self.questionNumber.text  else { return }
+
+    percent.addObserver(self, options: [.new, .initial], closure: { [weak self] (percent, _) in
+      self?.questionNumber.text = "\(text) \(self?.count ?? 0), \(percent)%"
+    })
   }
 
-  private func setUpSource() {
+  private func setGameScene() {
     gameScene = GameScene()
     gameScene.gameDelegate = self
-    source = QuestionSource()
-    questions = source.getQuestions()
+  }
+  
+  private func setUpSource() {
+    switch Game.shared.queue {
+    case .def:
+      let defaultQueue = DefaultQuestionsQueue()
+      questions = defaultQueue.getQuesrionsQueue()
+    case .rendom:
+      let randomQuestion = RandomQuestionsQueue()
+      questions = randomQuestion.getQuesrionsQueue()
+    }
+
     currentQuestion = questions[0]
-    Game.shared.startGameSession(questionsCount: questions.count)
+    Game.shared.gameSession?.hintUsageFacade.question = currentQuestion
+    Game.shared.startGameSession(questionsCount: questions.count, hintUsageFacade: HintUsageFacade(hintUsedFacade: self))
   }
   
   private func setUpButton() {
@@ -100,9 +122,16 @@ class GameViewController: UIViewController {
     )
   }
 
+  private func countPercent() {
+    guard let questions = Game.shared.gameSession?.countQuestions,
+          let answers = Game.shared.gameSession?.countAnsweers else { return }
+
+    percent.value = (100 * answers) / questions
+  }
+
   @objc
   func handleTapHelperFiftyView(_ sender: UITapGestureRecognizer) {
-    gameScene.usehelperFifty()
+    Game.shared.gameSession?.hintUsageFacade.use50to50Hint()
     var count = 2
     guard let answerA = answerA.title(for: .normal),
           let answerB = answerB.title(for: .normal),
@@ -129,15 +158,13 @@ class GameViewController: UIViewController {
   
   @objc
   func handleTapHelperFriendView(_ sender: UITapGestureRecognizer) {
-    gameScene.usehelperFriend()
-    
+    Game.shared.gameSession?.hintUsageFacade.callFriend()
     GameFlow.shared.onNext(step: .showInfo(value: currentQuestion.answer))
   }
   
   @objc
   func handleTapHelperPeopleView(_ sender: UITapGestureRecognizer) {
-    gameScene.usehelperPeople()
-
+    Game.shared.gameSession?.hintUsageFacade.useAuditoryHelp()
     GameFlow.shared.onNext(step: .showInfo(value: currentQuestion.answer))
   }
   
@@ -149,6 +176,7 @@ class GameViewController: UIViewController {
     if gameScene.isAnswerTrue(answer: title, trueAnswer: currentQuestion.answer) {
       startAnimation(button: sender, color: .green, completion: { [weak self] _ in
         sender.backgroundColor = .clear
+        self?.count += 1
         self?.setNextQuestion()
       })
     }
@@ -171,6 +199,7 @@ class GameViewController: UIViewController {
   }
 
   private func setNextQuestion() {
+    countPercent()
     let currentIndex = questions.firstIndex { value in
       value.answer == currentQuestion.answer
     } ?? questions.count
@@ -179,6 +208,7 @@ class GameViewController: UIViewController {
       currentQuestion = questions[currentIndex + 1]
     }
   
+    Game.shared.gameSession?.hintUsageFacade.question = currentQuestion
     updateQuestion()
   }
   
@@ -196,31 +226,30 @@ class GameViewController: UIViewController {
   }
 }
 
-extension GameViewController: GameDelegate {
-  func gameEnd() {
-    guard let questions = Game.shared.gameSession?.countQuestions,
-          let answers = Game.shared.gameSession?.countAnsweers else { return }
-
-    let score = (100 * answers) / questions
-    let record = Record(date: Date(), score: score)
-    Game.shared.addRecord(record: record)
-  }
-  
-  func usehelperPeople() {
-    Game.shared.gameSession?.hallPromptIsUsed = true
-    helperPeopleView.isHidden = true
-  }
-  
-  func usehelperFifty() {
-    Game.shared.gameSession?.fiftyFiftyIsUsed = true
-    helperFiftyView.isHidden = true
-  }
-  
-  func usehelperFriend() {
+extension GameViewController: HintUsedFacade {
+  func calledFriend() {
     Game.shared.gameSession?.coleFriendsIsUsed = true
     helperFriendView.isHidden = true
   }
   
+  func usedAuditoryHelp() {
+    Game.shared.gameSession?.hallPromptIsUsed = true
+    helperPeopleView.isHidden = true
+  }
+  
+  func used50to50Hint() {
+    Game.shared.gameSession?.fiftyFiftyIsUsed = true
+    helperFiftyView.isHidden = true
+  }
+}
+
+extension GameViewController: GameDelegate {
+  func gameEnd() {
+    countPercent()
+    let record = Record(date: Date(), score: percent.value)
+    Game.shared.addRecord(record: record)
+  }
+
   func updateProgresGame(isTrue: Bool) {
     guard isTrue == true,
       let mony = Game.shared.gameSession?.mony,

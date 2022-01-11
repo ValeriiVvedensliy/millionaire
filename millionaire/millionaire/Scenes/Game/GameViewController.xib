@@ -18,6 +18,7 @@
                 <outlet property="helperFriendView" destination="MDB-dJ-8ZT" id="9jr-UH-Ip0"/>
                 <outlet property="helperPeopleView" destination="Dqo-n2-aAw" id="Ye1-3K-e4p"/>
                 <outlet property="questionLabel" destination="i12-3c-fSK" id="Ayl-ly-t52"/>
+                <outlet property="questionNumber" destination="tPV-jL-2bA" id="SCf-fF-cOW"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -72,15 +73,6 @@
                     <state key="normal" title="Button"/>
                     <buttonConfiguration key="configuration" style="plain" title="Button"/>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P3A-H5-Qlu">
-                    <rect key="frame" x="24" y="681" width="327" height="44"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="44" id="TF6-H5-C2O"/>
-                    </constraints>
-                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    <state key="normal" title="Button"/>
-                    <buttonConfiguration key="configuration" style="plain" title="Button"/>
-                </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BW7-N4-r4Y">
                     <rect key="frame" x="24" y="627" width="327" height="44"/>
                     <constraints>
@@ -90,10 +82,26 @@
                     <state key="normal" title="Button"/>
                     <buttonConfiguration key="configuration" style="plain" title="Button"/>
                 </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P3A-H5-Qlu">
+                    <rect key="frame" x="24" y="681" width="327" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="TF6-H5-C2O"/>
+                    </constraints>
+                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Вопрос №" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tPV-jL-2bA">
+                    <rect key="frame" x="146" y="424" width="83.333333333333314" height="20.333333333333314"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
+                <constraint firstItem="tPV-jL-2bA" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="0Mi-Oh-ad4"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="YtO-KM-V5O" secondAttribute="trailing" constant="24" id="3ef-b6-AMj"/>
                 <constraint firstItem="AA8-X5-y5z" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="24" id="8Wf-Ep-9hy"/>
                 <constraint firstItem="N8Y-Ei-Lm0" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="24" id="99n-Uq-WRY"/>
@@ -102,6 +110,7 @@
                 <constraint firstItem="YtO-KM-V5O" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="S3R-rj-jxU"/>
                 <constraint firstItem="P3A-H5-Qlu" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="24" id="UaN-Mb-snm"/>
                 <constraint firstItem="AA8-X5-y5z" firstAttribute="top" secondItem="N8Y-Ei-Lm0" secondAttribute="bottom" constant="10" id="W5E-jY-aJA"/>
+                <constraint firstItem="tPV-jL-2bA" firstAttribute="top" secondItem="i12-3c-fSK" secondAttribute="bottom" constant="55" id="m1B-tD-eVw"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="BW7-N4-r4Y" secondAttribute="trailing" constant="24" id="mP5-MI-Ma8"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="i12-3c-fSK" secondAttribute="trailing" id="nDC-A6-W9O"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="P3A-H5-Qlu" secondAttribute="trailing" constant="24" id="nGa-tr-G3b"/>

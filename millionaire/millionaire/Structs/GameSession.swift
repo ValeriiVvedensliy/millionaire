@@ -14,13 +14,15 @@ struct GameSession {
   var coleFriendsIsUsed: Bool
   var hallPromptIsUsed: Bool
   var fiftyFiftyIsUsed: Bool
+  var hintUsageFacade: HintUsageFacade
   
-  init (countQuestions: Int) {
+  init (countQuestions: Int, hintUsageFacade: HintUsageFacade) {
     self.countQuestions = countQuestions
     self.countAnsweers = 0
     self.mony = 0
     self.coleFriendsIsUsed = false
     self.hallPromptIsUsed = false
     self.fiftyFiftyIsUsed = false
+    self.hintUsageFacade = hintUsageFacade
   }
 }
