@@ -10,8 +10,10 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController" customModule="millionaire" customModuleProvider="target">
             <connections>
+                <outlet property="addQuestion" destination="o68-uR-hLI" id="k2L-Va-d1K"/>
                 <outlet property="resultBtn" destination="8hh-CL-TuS" id="JO7-lv-h3g"/>
                 <outlet property="rootView" destination="i5M-Pr-FkT" id="YCh-qC-cu2"/>
+                <outlet property="settingBtn" destination="WIw-yE-egP" id="y3l-vx-UR1"/>
                 <outlet property="startBtn" destination="hsK-LO-Z3V" id="Fa3-nP-zna"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -46,18 +48,42 @@
                     <state key="normal" title="Button"/>
                     <buttonConfiguration key="configuration" style="plain" title=""/>
                 </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WIw-yE-egP">
+                    <rect key="frame" x="24" y="713" width="327" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="ZBT-bJ-LP6"/>
+                    </constraints>
+                    <color key="tintColor" systemColor="systemGreenColor"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title=""/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o68-uR-hLI">
+                    <rect key="frame" x="24" y="507" width="327" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="DFd-xr-zN3"/>
+                    </constraints>
+                    <color key="tintColor" systemColor="systemGreenColor"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title=""/>
+                </button>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="WIw-yE-egP" secondAttribute="bottom" constant="21" id="0gs-JA-8hC"/>
+                <constraint firstItem="WIw-yE-egP" firstAttribute="top" secondItem="8hh-CL-TuS" secondAttribute="bottom" constant="25" id="2Av-vi-MMF"/>
                 <constraint firstItem="hsK-LO-Z3V" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="3gy-nP-FHh"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="hsK-LO-Z3V" secondAttribute="trailing" constant="24" id="9eO-8a-a1C"/>
                 <constraint firstItem="8hh-CL-TuS" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="24" id="JnG-t7-Mat"/>
                 <constraint firstItem="8hh-CL-TuS" firstAttribute="top" secondItem="hsK-LO-Z3V" secondAttribute="bottom" constant="25" id="Mc6-7W-6sd"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="8hh-CL-TuS" secondAttribute="bottom" constant="90" id="Uxo-xF-ADV"/>
+                <constraint firstItem="o68-uR-hLI" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="24" id="V8h-Px-msv"/>
                 <constraint firstItem="hsK-LO-Z3V" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="24" id="Wed-fG-OMs"/>
+                <constraint firstItem="WIw-yE-egP" firstAttribute="leading" secondItem="8hh-CL-TuS" secondAttribute="leading" id="gI2-Vk-YCK"/>
                 <constraint firstItem="tka-Uf-bdQ" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="lo1-7Z-7ER"/>
                 <constraint firstItem="tka-Uf-bdQ" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="100" id="mbG-q8-Kkt"/>
+                <constraint firstItem="WIw-yE-egP" firstAttribute="trailing" secondItem="8hh-CL-TuS" secondAttribute="trailing" id="mlW-M0-Lqk"/>
+                <constraint firstItem="hsK-LO-Z3V" firstAttribute="top" secondItem="o68-uR-hLI" secondAttribute="bottom" constant="24" id="utf-dJ-zaD"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="o68-uR-hLI" secondAttribute="trailing" constant="24" id="wIt-A8-Lak"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="8hh-CL-TuS" secondAttribute="trailing" constant="24" id="ys2-Gx-bA0"/>
             </constraints>
             <point key="canvasLocation" x="139" y="139"/>

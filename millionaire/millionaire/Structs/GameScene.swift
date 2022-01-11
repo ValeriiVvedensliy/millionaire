@@ -17,24 +17,6 @@ class GameScene {
     return isTrue
   }
   
-  func usehelperPeople() {
-    guard let gameDelegate = gameDelegate else { return }
-
-    gameDelegate.usehelperPeople()
-  }
-  
-  func usehelperFifty() {
-    guard let gameDelegate = gameDelegate else { return }
-
-    gameDelegate.usehelperFifty()
-  }
-  
-  func usehelperFriend() {
-    guard let gameDelegate = gameDelegate else { return }
-
-    gameDelegate.usehelperFriend()
-  }
-  
   func gameEnd() {
     guard let gameDelegate = gameDelegate else { return }
 

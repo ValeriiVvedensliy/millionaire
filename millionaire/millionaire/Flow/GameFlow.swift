@@ -32,6 +32,10 @@ class GameFlow: Flow {
       goToRoot()
     case .showInfo(value: let value):
       goToPopUp(value: value)
+    case .setting:
+      goToSetting()
+    case .newQuestion:
+      goToCreatingQuestion()
     }
   }
 
@@ -60,6 +64,20 @@ class GameFlow: Flow {
 
   private func goToResult() {
     let vc = ResultTableViewController()
+    vc.modalPresentationStyle = .overFullScreen
+    vc.modalTransitionStyle = .crossDissolve
+    rootViewController.viewControllers.last?.navigationController?.pushViewController(vc, animated: true)
+  }
+
+  private func goToSetting() {
+    let vc = SettingViewController()
+    vc.modalPresentationStyle = .overFullScreen
+    vc.modalTransitionStyle = .crossDissolve
+    rootViewController.viewControllers.last?.navigationController?.pushViewController(vc, animated: true)
+  }
+
+  private func goToCreatingQuestion() {
+    let vc = CreationViewController()
     vc.modalPresentationStyle = .overFullScreen
     vc.modalTransitionStyle = .crossDissolve
     rootViewController.viewControllers.last?.navigationController?.pushViewController(vc, animated: true)

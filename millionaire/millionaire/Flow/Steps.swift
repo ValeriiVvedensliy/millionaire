@@ -14,4 +14,6 @@ public enum Steps {
   case gameOver
   case showInfo(value: String)
   case result
+  case setting
+  case newQuestion
 }
